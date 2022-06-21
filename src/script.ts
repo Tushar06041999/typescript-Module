@@ -74,3 +74,59 @@ const myFunc=(a:string,b:string,c?:string)=>{
     console.log(`Hello ${a} ${b}`)
 }
 myFunc("Tushar","Chandra")
+
+// More function Discribe
+ 
+let myFunction:(x:number,y:number)=>number;
+myFunction=(a:number,b:number)=>{
+    return a+b;
+}
+console.log(myFunction(10,12));
+
+// object Decleration and access
+
+let studentInfo:(id:number, Details:{
+named:string,
+Roll:number,
+passed:boolean
+
+
+})=>void;
+
+studentInfo:(id:1258749 ,Details:{
+named:"Tushar",
+Roll:123456,
+passed:true
+})=>{
+
+}
+
+// interface declearation bangla tutorial
+console.log("Hello Programmers");
+
+interface Rectangleoption{
+      height:number
+      width:number
+}
+function drawrectangle(options : Rectangleoption){
+    let height=options.height;
+    let width=options.width;
+    return height+width;
+}
+var result=drawrectangle({height:10,width:10});
+console.log(result);
+
+
+// All About generics
+
+const addId=<T>(obj:object)=>{
+    let id=Math.floor(Math.random()*100);
+    return {...obj,id};
+
+};
+let user=addId({
+    name:"Mohanto",
+    age:40,
+    country:"bangladesh"
+})
+console.log(user.id)

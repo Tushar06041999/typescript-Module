@@ -55,3 +55,33 @@ const myFunc = (a, b, c) => {
     console.log(`Hello ${a} ${b}`);
 };
 myFunc("Tushar", "Chandra");
+// More function Discribe
+let myFunction;
+myFunction = (a, b) => {
+    return a + b;
+};
+console.log(myFunction(10, 12));
+// object Decleration and access
+let studentInfo;
+studentInfo: (id, Details) => {
+};
+// interface declearation bangla tutorial
+console.log("Hello Programmers");
+function drawrectangle(options) {
+    let height = options.height;
+    let width = options.width;
+    return height + width;
+}
+var result = drawrectangle({ height: 10, width: 10 });
+console.log(result);
+// All About generics
+const addId = (obj) => {
+    let id = Math.floor(Math.random() * 100);
+    return Object.assign(Object.assign({}, obj), { id });
+};
+let user = addId({
+    name: "Mohanto",
+    age: 40,
+    country: "bangladesh"
+});
+console.log(user.id);
