@@ -130,3 +130,22 @@ let user=addId({
     country:"bangladesh"
 })
 console.log(user.id)
+
+// Enum Types declearation
+
+enum Rtype{success,fAILURE,UNAUTHENTICATED,FORBIDDEN}
+interface APIresponse<T>{
+    status:string,
+    type:Rtype,
+    data:T
+}
+const response1:APIresponse<string>={
+    status:"Good",
+    type:Rtype.UNAUTHENTICATED,
+    data:"excellernt"
+}
+console.log(response1);
+
+// loop declearation
+const number=Math.ceil(Math.random()*1000);
+console.log(number);

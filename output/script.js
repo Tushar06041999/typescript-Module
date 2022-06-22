@@ -85,3 +85,17 @@ let user = addId({
     country: "bangladesh"
 });
 console.log(user.id);
+// Enum Types declearation
+var Rtype;
+(function (Rtype) {
+    Rtype[Rtype["success"] = 0] = "success";
+    Rtype[Rtype["fAILURE"] = 1] = "fAILURE";
+    Rtype[Rtype["UNAUTHENTICATED"] = 2] = "UNAUTHENTICATED";
+    Rtype[Rtype["FORBIDDEN"] = 3] = "FORBIDDEN";
+})(Rtype || (Rtype = {}));
+const response1 = {
+    status: "Good",
+    type: Rtype.UNAUTHENTICATED,
+    data: "excellernt"
+};
+console.log(response1);
