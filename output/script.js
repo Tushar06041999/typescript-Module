@@ -99,3 +99,33 @@ const response1 = {
     data: "excellernt"
 };
 console.log(response1);
+// loop declearation
+const number = Math.ceil(Math.random() * 1000);
+console.log(number);
+// multiple object declearation with array
+let student;
+const student1 = {
+    firstname: "Tushar",
+    lastname: "Mohanto",
+    email: "tushar06041999@gmail.com",
+    studentId: 123654,
+};
+const student2 = {
+    firstname: "Tonmoy",
+    lastname: "Mohanto",
+    email: "tonmoy06041999@gmail.com",
+    studentId: 123655,
+};
+const student3 = {
+    firstname: "uzzal",
+    lastname: "Mohanto",
+    email: "uzzal06041999@gmail.com",
+    studentId: 1236545,
+};
+const studentData = [student1, student2, student3];
+for (let i = 0; i < studentData.length; i++) {
+    Datasend(studentData[i].email);
+}
+function Datasend(email) {
+    console.log("sending mail with", email);
+}
