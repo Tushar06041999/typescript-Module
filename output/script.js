@@ -155,3 +155,26 @@ const calculation = (number10) => {
     }
 };
 calculation(10);
+// constructor method in typescript
+class Student {
+    constructor(fname, Creligion, Sid) {
+        this.fname = fname;
+        this.religion = Creligion;
+        this.id = Sid;
+    }
+}
+const studentInform = new Student("Tushar", "Hindu", 23654);
+const studentInform1 = new Student("Chandra", "Hindu", 23655);
+const studentInform2 = new Student("Mohanto", "Hindu", 23656);
+const studentInform3 = new Student("Roy", "Hindu", 23657);
+console.log(studentInform);
+console.log(studentInform1);
+console.log(studentInform2);
+console.log(studentInform3);
+// Decleare array to maximum and minimum Number in Here
+const khs = [520, 564, 258, 78, 369, 963, 321];
+const Balu = [620, 564, 158, 78, 69, 1163, 221];
+const pahar = [20, 364, 358, 78, 469, 863, 121];
+const Nkd = [1120, 1164, 258, 78, 1069, 963, 221];
+let maximumNum = Math.max(...khs, ...Balu, ...pahar, ...Nkd);
+console.log(maximumNum);
