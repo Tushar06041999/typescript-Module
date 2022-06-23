@@ -129,3 +129,29 @@ for (let i = 0; i < studentData.length; i++) {
 function Datasend(email) {
     console.log("sending mail with", email);
 }
+// if else statement with conditional function
+function provider(name9) {
+    if (!name9) {
+        console.log("Please Provide your name");
+    }
+    else {
+        console.log("Hello", name9);
+    }
+}
+provider("tushar");
+provider("root");
+provider("");
+// minimum and maximum number decleration
+function totalNumber(min, max) {
+    const randomNum = Math.round(Math.random() * min + (max - min));
+    return randomNum;
+}
+console.log(totalNumber(10, 15));
+// callback function declecation with variable 
+const calculation = (number10) => {
+    for (let i = 1; i <= 10; i++) {
+        const result1 = i * number10;
+        console.log(result1);
+    }
+};
+calculation(10);
