@@ -178,3 +178,10 @@ const pahar = [20, 364, 358, 78, 469, 863, 121];
 const Nkd = [1120, 1164, 258, 78, 1069, 963, 221];
 let maximumNum = Math.max(...khs, ...Balu, ...pahar, ...Nkd);
 console.log(maximumNum);
+// Imparative way to loop Declearation
+const number2 = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 10];
+let sum1 = 0;
+for (let i = 0; i < number2.length; i++) {
+    sum1 += number2[i];
+}
+console.log(sum1);
