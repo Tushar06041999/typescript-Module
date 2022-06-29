@@ -157,16 +157,17 @@ const calculation = (number10) => {
 calculation(10);
 // constructor method in typescript
 class Student {
-    constructor(fname, Creligion, Sid) {
+    constructor(fname, Creligion, Sid, coffe) {
         this.fname = fname;
         this.religion = Creligion;
         this.id = Sid;
+        this.coffe = coffe;
     }
 }
-const studentInform = new Student("Tushar", "Hindu", 23654);
-const studentInform1 = new Student("Chandra", "Hindu", 23655);
-const studentInform2 = new Student("Mohanto", "Hindu", 23656);
-const studentInform3 = new Student("Roy", "Hindu", 23657);
+const studentInform = new Student("Tushar", "Hindu", 23654, true);
+const studentInform1 = new Student("Chandra", "Hindu", 23655, false);
+const studentInform2 = new Student("Mohanto", "Hindu", 23656, true);
+const studentInform3 = new Student("Roy", "Hindu", 23657, false);
 console.log(studentInform);
 console.log(studentInform1);
 console.log(studentInform2);
@@ -185,3 +186,37 @@ for (let i = 0; i < number2.length; i++) {
     sum1 += number2[i];
 }
 console.log(sum1);
+number2.forEach(function (value) {
+    console.log(value);
+});
+// Declear array and find Number from this
+// const arrayDeclear=[10,11,12," ",null,11,23];
+// for(let i=0;i<=arrayDeclear.length;i++){
+//     if(typeof arrayDeclear[i]!="number"){
+//         arrayDeclear[i]=undefined;
+//     }
+// }
+// console.log(arrayDeclear);
+alert("HEllo Programmers");
+// fibonacci seriies Decleared by Fibonacci law
+// function fibo(n1:number){
+//     if(n1==0 || n1==1){
+//         return n1;
+//     }
+//         return fibo(n1-1) + fibo(n1-2);
+// }
+// console.log(fibo(10));
+// Differnt way to Declear fibonacci series
+let fiboRes = 0;
+function fibonacci(n) {
+    for (let i = 1; i <= n; i++) {
+        fiboRes += i;
+    }
+}
+fibonacci(20);
+console.log(fiboRes);
+// callbacik function Declear for other method
+function gretting(name) {
+    console.log(name);
+}
+gretting("Hello Tushar");
